@@ -2,29 +2,29 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
     font-family: "Roboto", sans-serif;
 }
 
-.navbar {
+nav {
     display: flex;
     flex-flow: row wrap;
     height: 100px;
     background-color: white;
     justify-content: center;
     align-items: center;
-    position: fixed;
     width: 100%;
-    padding-bottom: 200px;
 }
 
 .logo {
     flex: 20%;
     text-align: left;
     margin-left: 10%;
+    margin-top: 25px;
 }
 
 .logo h1 {
@@ -148,6 +148,10 @@ section h2 {
     border: 1px solid red;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.cards h3{
+    margin-bottom: 15px;
 }
 
 .cards:hover {
