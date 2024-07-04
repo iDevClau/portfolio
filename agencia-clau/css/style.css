@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+.logo {
+    flex: 20%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.logo h1 {
+    font-family: "Pacifico", cursive;
+    color: black;
+    font-size: 34px;
+}
+
+.menu {
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover {
+    color: white;
+    background-color: red;
+    border-top: 3px solid rgb(95, 0, 0);
+
+}
+
+#botao {
+    padding: 10px 25px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+
+#botao:hover {
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.headline {
+    flex: 40%;
+    margin-left: 10%;
+}
+
+.headline h2 {
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.headline p {
+    color: gray;
+    text-align: left;
+}
+
+.img-headline {
+    margin-right: 10%;
+    flex: 40%;
+    text-align: center;
+}
+
+.contact-btn {
+    display: inline-block;
+    background-color: red;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contact-btn:hover {
+    background-color: black;
+}
+
+
+
+section {
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding: 5%;
+}
+
+section h2 {
+    width: 100%;
+    font-size: 50px;
+    margin: 0;
+    font-family: "Pacifico", cursive;
+    font-weight: bold;
+    color: black;
+}
+
+.servicos {
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.cards {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cards:hover {
+    background-color: red;
+    color: white;
+    padding: 40px;
+}
+
+.cards:hover img {
+    display: none;
+}
+
+.cards:hover .card-text {
+    display: none;
+}
+
+.cards:hover .texto-oculto {
+    display: block;
+}
+
+.texto-oculto {
+    display: none;
+}
+
+footer {
+    margin-top: 100px;
+    height: 400px;
+    background-image: linear-gradient(180deg, red, rgb(94, 0, 0), black);
+    text-align: center;
+    border-top: red;
+}
+
+.logo-footer {
+    padding: 100px;
+}
+
+.agencia {
+    font-family: "Pacifico", cursive;
+    color: white;
+    font-size: 34px;
+}
+
+.whats {
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+
+}

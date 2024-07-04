@@ -1,0 +1,626 @@
+/* ESTILO GERAL */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Spray+Paint&family=Sedan:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Arimo", sans-serif;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.logo h1 {
+    color: white;
+    font-size: 40px;
+    font-family: "Lilita One", sans-serif;
+    text-shadow: 1px 1px 5px black;
+    margin: 0%;
+    text-align: center;
+}
+
+section {
+    padding: 20px 4% 100px 4%;
+    box-shadow: 0 0 1px 1px #72b3fec4;
+}
+
+
+h2,
+h1 {
+    margin: 30px 0 30px 0;
+}
+
+
+h2.titulo,
+h1.titulo {
+    color: black;
+    font-size: 45px;
+    text-align: center;
+}
+
+h2.titulo span,
+h1.titulo span {
+    color: #72b4fe;
+}
+
+h4 {
+    margin: 30px 0 15px 0;
+}
+
+
+p {
+    font-size: 25px;
+    text-align: center;
+
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header {
+    padding: 0;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #72b4fe;
+    height: 150px;
+    padding: 40px 4%;
+}
+
+header a {
+    color: #e1e1e1;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    display: inline-block;
+    transition: .2s;
+
+}
+
+header nav .menu-desktop a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: white;
+    color: #72b4fe;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-contato button:hover {
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 8px black;
+}
+
+/* ESTILO MENU MOBILE */
+
+.btn-abrir-menu i {
+    color: white;
+    font-size: 40px;
+    display: none;
+}
+
+.menu-mobile {
+    background-color: #72b4fe;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999999999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.menu-mobile.abrir-menu {
+    width: 70%;
+}
+
+.menu-mobile.abrir-menu~.overlay-menu {
+    display: block;
+}
+
+
+.overlay-menu {
+    background-color: rgba(0, 0, 0, 0.884);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 8888888;
+    display: none;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-mobile nav ul li a {
+    font-size: 23px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+
+}
+
+.menu-mobile nav ul li:hover {
+    background-color: white;
+}
+
+.menu-mobile nav ul li a:hover {
+    color: #72b4fe;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i {
+    color: white;
+    font-size: 30px;
+
+}
+
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site {
+    padding: 40px;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+
+.topo-do-site h1 {
+    word-spacing: 4px;
+    letter-spacing: 4px;
+    font-size: 70px;
+    color: black;
+    line-height: 75px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #72b4fe;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px;
+    }
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* ESTILO DAS INFOS */
+
+section.infos {
+    padding: 40px;
+}
+
+section.infos .flex {
+    gap: 60px;
+}
+
+.infos .card {
+    color: black;
+    padding: 40px;
+    border: 2px solid #72b4fe;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+    flex: 40%;
+    text-align: center;
+}
+
+.infos .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #72b4fe;
+}
+
+.infos .card i {
+    font-size: 50px;
+    color: #72b4fe;
+}
+
+.infos .card h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.infos .img-fx {
+    margin: 70px 7% 10px 7%;
+    box-shadow: 8px 8px 35px #72b4fe;
+    width: 87%;
+    height: 100%;
+}
+
+#backtop {
+    text-decoration: none;
+    background-color: #72b4fe;
+    color: white;
+    padding: 4px 20px;
+    font-size: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 2px black;
+}
+
+
+/* ESTILO IFRAME */
+
+.bate-papo .how {
+    margin: 30px 10% 0 10%;
+    box-shadow: 8px 8px 35px #72b4fe;
+
+}
+
+/* ESTILO INVESTIMENTOS */
+
+.fundo-inv .img-inv {
+    margin: 40px 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pamm .interface p {
+    padding: 10px;
+}
+
+/* ESTILO RESULTADO */
+
+.resultado p {
+    padding: 10px;
+}
+
+#my button {
+    padding: 15px 50px;
+}
+
+.btn-myfx {
+    margin: auto;
+
+}
+
+.btn-myfx button {
+    padding: 20px 70px;
+    font-family: "Lilita One", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    background-color: #72b4fe;
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    text-shadow: 1px 1px 5px black;
+    margin: 2% auto;
+}
+
+.btn-myfx button:hover {
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 8px black;
+
+}
+
+.btn-wpp button {
+    padding: 20px 70px;
+    font-family: "Lilita One", sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    background-color: rgb(0, 212, 0);
+    color: white;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+    text-shadow: 1px 1px 5px black;
+}
+
+.btn-wpp button:hover {
+    transform: scale(1.05);
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 8px black;
+}
+
+/* ESTILO OUTRAS PÁGINAS */
+
+/* SOBRE NÓS */
+
+.sobre-nos #backtop,
+.licença #backtop {
+    display: none;
+}
+
+/* CORRETORA */
+
+.corretora .interface {
+    padding: 0px 4%;
+}
+
+.corretora #topo {
+    margin: 30px 0 10px 0;
+}
+
+.corretora h2 {
+    margin: 30px 0 50px 0;
+}
+
+.corretora,
+.entidades h4 {
+    text-align: center;
+    font-size: 32px;
+}
+
+/* PREMI */
+
+.premi .premiacoes {
+    padding: 0 10% 30px 10%;
+}
+
+.premi .premiacoes li {
+    font-size: 24px;
+    text-align: left;
+    padding: 10px 0;
+    margin: 0;
+}
+
+/* TUTORIAL */
+
+.tutorial h3,
+p {
+    padding: 15px 0 15px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.tutorial .interface {
+    padding: 0px 4%;
+}
+
+.tutorial .interface img {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    box-shadow: 1px 1px 30px #72b4fe;
+}
+
+/* LICENÇA */
+
+.licença button {
+    padding: 60px 60px;
+}
+
+/* MESA PROPRIETARIA */
+.mesa .interface {
+    padding: 0 4%;
+}
+
+.mesa .btn-wpp button {
+    margin: 2%;
+}
+
+
+/* PAG CONTATO */
+.contato .interface {
+    padding: 0 4%;
+}
+
+.contato .interface h3 {
+    margin: 50px 0 15px 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.btn-wpp {
+    text-align: center;
+}
+
+.contato .interface .img-insta {
+    display: flex;
+    margin: auto;
+}
+
+/* ESTILO RODAPÉ */
+
+footer {
+    margin-top: 0;
+    background-color: #72b4fe;
+    text-align: center;
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px #72b3fec4;
+}
+
+.gpt {
+    color: white;
+    font-size: 40px;
+    font-family: "Lilita One", sans-serif;
+    text-shadow: 1px 1px 5px black;
+    padding: 11px;
+    margin: 0%;
+    text-align: center;
+}
+
+/* ESTILO RESPONSIVO */
+
+/* CELULARES E TABLETS */
+@media screen and (max-width: 1150px) {
+
+    /* CLASSES GERAIS */
+
+    .btn-abrir-menu i {
+        display: block;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* CABEÇALHO */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .logo {
+
+        margin: auto;
+    }
+
+    h2.titulo {
+        font-size: 33px;
+    }
+
+    /* TOPO DO SITE */
+    section.topo-do-site .flex {
+        gap: 30px;
+    }
+
+    /* ESTILO DAS INFOS */
+
+    section.infos {
+        padding: 40px;
+    }
+
+    section.infos .flex {
+        gap: 0px;
+    }
+
+    .infos .img-fx {
+        margin: 50px 0 15px 0;
+        width: 100%;
+    }
+
+    #backtop {
+        padding: 4px 20px;
+    }
+
+    /* ESTILO IFRAME */
+
+    .bate-papo .how {
+        height: 400px;
+
+    }
+
+    /* TOPO DO SITE */
+    .topo-do-site h1 {
+        letter-spacing: 3px;
+        font-size: 38px;
+        line-height: 48px;
+        text-align: center;
+    }
+
+    /* BOTÃO MYFX */
+    .btn-myfx button {
+        padding: 20px 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    /* PAG TUTORIAL */
+
+    .tutorial .btn-myfx {
+        padding: auto;
+    }
+
+    .tutorial .interface img {
+        margin-top: 8%;
+        margin-bottom: 2%;
+    }
+
+    /* LICENÇA */
+
+    .licença button {
+        padding: 35px 35px;
+        font-size: 35px;
+    }
+
+    /* PAG CONTATO */
+    .contato .interface .img-insta {
+        width: 100%;
+    }
+
+    .contato .btn-wpp button,
+    .mesa .btn-wpp button,
+    .tutorial .btn-wpp button {
+        padding: 20px 30px;
+        margin: 2%;
+    }
+
+    /* BACKTOP */
+    .sobre-nos #backtop,
+    .licença #backtop {
+        display: flex;
+    }
+}
+
+/* TABLETS TELAS MAIORES, COMPUTADORES TELAS MENORES */
+
+@media (min-width: 1151px) and (max-width: 1353px) {
+    /* CLASSES GERAIS */
+
+    .btn-abrir-menu i {
+        display: none;
+    }
+
+    header>.interface {
+        height: 150px;
+        padding: 40px 1%;
+    }
+
+    header nav.menu-desktop ul li {
+        display: inline-block;
+        padding: 0 20px;
+    }
+
+    #backtop {
+        padding: 4px 20px;
+    }
+}
