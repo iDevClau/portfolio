@@ -1,0 +1,4 @@
+    RewriteEngine On
+    RewriteRule ^([0-9A-Za-z-_]+)$ /$1.html
+
+    RewriteRule ^inicio.*$ index.html?page=inicio [NC]
