@@ -1,0 +1,254 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lilita+One&display=swap');
+
+/* ESTILO GERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 1em "JetBrains Mono", monospace;
+}
+
+body {
+    background-image: url('images/deve.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    margin-top: 70px;
+}
+
+.flex {
+    display: flex;
+}
+
+.azul {
+    color: #1795ba;
+    font-weight: 800;
+}
+
+.port1 iframe {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #1795ba;
+    max-width: 600px;
+    height: 500px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section {
+    margin-bottom: 10px;
+}
+
+.wpp{
+    margin: 30px 0 15px 0;
+}
+.wpp button {
+    display: block;
+    background-color: green;
+    color: white;
+    padding: 17px;
+    font-size: 1.5em;
+    font-weight: 700;
+    border-radius: 25px;
+    margin: auto;
+}
+
+.wpp button:hover{
+    transform: scale(1.2);
+    transition: .5s;
+    background-color: #1795ba;
+    cursor: pointer;
+}
+
+/*CABEÇALHO*/
+header {
+    padding: 40px;
+}
+
+.logo {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 205, 0);
+    border-radius: 25px;
+    margin-left: 40px;
+}
+
+.logo:hover {
+    box-shadow: 1px 1px 5px #1795ba;
+    transition: .5s;
+    transform: scale(1.1);
+}
+
+.logo>a>h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+}
+
+.menu {
+    float: right;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 10px;
+}
+
+.menu:hover {
+    background-color: transparent;
+}
+
+.menu>nav>ul {
+    margin-right: 0;
+}
+
+.menu>nav>ul>li {
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    margin: 0 5px 0 5px;
+
+}
+
+.menu>nav>ul>li:hover {
+    background-color: #1795ba;
+    border-radius: 10px;
+    transform: scale(1.3);
+    transition: .5s;
+}
+
+.menu>nav>ul>li a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px black;
+    font-size: 1.2em;
+
+}
+
+.menu>nav>ul>li a:hover {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.582);
+}
+
+/* TOPO DO SITE */
+
+section.topo-do-site,
+section.sobre {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex,
+section.sobre .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.txt {
+    color: white;
+    background-color: #000000ef;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1000px;
+    box-shadow: 1px 1px 3px #1794ba2c;
+}
+
+.txt h1 {
+    padding-top: 10px;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.306);
+}
+
+.txt p {
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.topo-do-site .topo-img img,
+.sobre .foto img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+
+    }
+
+    100% {
+        top: 20px;
+
+    }
+}
+
+
+.sobre a {
+    text-decoration: underline;
+    color: #1795ba;
+}
+
+.sobre a:hover {
+    font-size: 1.2em;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.icons i{
+    padding: 20px;
+    font-size: 3em;
+}
+
+.icons a{
+    color: white;
+}
+
+.icons a:hover{
+    transform: scale(1.3);
+    transition: .5s;
+    color: #1795ba;
+}
+
+/* RODAPÉ */
+footer {
+    margin-top: 200px;
+    padding: 70px;
+}
+
+.ft {
+    text-shadow: 1px 1px 3px black;
+    border-radius: 15px;
+    margin: auto;
+    padding: 10px;
+    max-width: 400px;
+}
+
+/* .ft:hover {
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.24);
+    padding: 15px;
+    transform: scale(1.2);
+    transition: .5s;
+} */
+
+.ft>p {
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}
