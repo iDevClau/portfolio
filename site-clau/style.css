@@ -17,7 +17,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed; */
-
     background: black url('images/deve1.jpg') right no-repeat fixed;
     background-size: cover;
 }
@@ -301,6 +300,10 @@ footer {
 
     .flex {
         flex-direction: column;
+    }
+
+    section {
+        width: 100%;
     }
 
     .topo-do-site .topo-img img,
