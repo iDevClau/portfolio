@@ -19,7 +19,7 @@ body {
 
 .logo h1 {
     color: white;
-    font-size: 40px;
+    font-size: 2em;
     font-family: "Lilita One", sans-serif;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.534);
     margin: 0%;
@@ -81,7 +81,7 @@ header a {
     color: rgb(236, 236, 236);
     text-decoration: none;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.1em;
     display: inline-block;
     transition: .2s;
 }
@@ -316,7 +316,7 @@ section.infos .flex {
     top: 5%;
     left: 5%;
     width: 90%;
-    height: 90%;
+    height: 75%;
     box-shadow: 0 0 15px #72b3fea6;
 }
 
@@ -625,28 +625,40 @@ footer {
     .licença #backtop {
         display: flex;
     }
-}
 
-/* TABLETS TELAS MAIORES, COMPUTADORES TELAS MENORES */
-
-@media (min-width: 1151px) and (max-width: 1353px) {
-    /* CLASSES GERAIS */
-
-    .btn-abrir-menu i {
-        display: none;
+    #vyt1 {
+        padding-bottom: 70%;
+        margin-bottom: 50px;
     }
 
-    header>.interface {
-        height: 150px;
-        padding: 40px 1%;
+    #vyt1>iframe {
+        left: 2%;
+        top: 2%;
+        width: 100%;
+        height: 100%;
     }
 
-    header nav.menu-desktop ul li {
-        display: inline-block;
-        padding: 0 20px;
-    }
+    /* TABLETS TELAS MAIORES, COMPUTADORES TELAS MENORES */
 
-    #backtop {
-        padding: 4px 20px;
+    @media (min-width: 1151px) and (max-width: 1353px) {
+        /* CLASSES GERAIS */
+
+        .btn-abrir-menu i {
+            display: none;
+        }
+
+        header>.interface {
+            height: 150px;
+            padding: 40px 1%;
+        }
+
+        header nav.menu-desktop ul li {
+            display: inline-block;
+            padding: 0 20px;
+        }
+
+        #backtop {
+            padding: 4px 20px;
+        }
     }
 }
