@@ -5,26 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clauderson Machado</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="interacoes.js"></script>
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <div class="logo">
             <a href="index.html">
                 <h1>CLAUDERSON <span class="azul">MACHADO</span></h1>
             </a>
         </div>
-        <div class="menu">
-            <nav>
+        <span id="opts" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+        <menu id="itens">
+            <nav id="nav">
                 <ul>
                     <li><a href="projetos.html">Projetos</a></li>
                     <li><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
-        </div>
+        </menu>
     </header>
     <main>
         <section class="sobre">
