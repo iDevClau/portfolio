@@ -10,14 +10,9 @@
 
     menu {
         display: none;
-        background-color: rgba(0, 0, 0, 0.623);
         margin: auto;
         float: none;
         width: 160px;
-    }
-
-    menu:hover {
-        background-color: rgba(0, 0, 0, 0.623);
     }
 
     menu>nav>ul>li {
@@ -34,7 +29,6 @@
 
     span#opts {
         display: block;
-        background-color: rgba(0, 0, 0, 0.698);
         width: 160px;
         height: 40px;
         margin-top: 10px;
@@ -51,21 +45,12 @@
         margin: auto;
     }
 
-    div#itens {
-        display: block;
-        width: 160px;
-        margin: auto;
-        background-color: rgba(0, 0, 0, 0.698);
-        border-radius: 0;
-    }
-
     .logo {
-        background-color: rgba(0, 0, 0, 0.698);
         max-width: 500px;
         display: block;
         margin: auto;
         margin-bottom: 10px;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
 
     .flex {
@@ -84,12 +69,6 @@
 
     .topo-do-site .flex {
         flex-direction: column-reverse;
-    }
-
-    .ft p {
-        background-color: rgba(0, 0, 0, 0.858);
-        padding: 5px;
-        border-radius: 10px;
     }
 
     .icons i {
