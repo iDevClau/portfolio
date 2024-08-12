@@ -14,24 +14,24 @@
     <script src="interacoes.js"></script>
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <div class="logo">
             <a href="index.html">
                 <h1>CLAUDERSON <span class="azul">MACHADO</span></h1>
             </a>
         </div>
-        <span id="menu" class="material-symbols-outlined" onclick="clickMenu()">
+        <span id="opts" class="material-symbols-outlined" onclick="clickMenu()">
             menu
         </span>
-        <div id="itens" class="menu">
+        <menu id="itens">
             <nav id="nav">
                 <ul>
                     <li><a href="index.html">Início</a></li>
                     <li><a href="projetos.html">Projetos</a></li>
                 </ul>
             </nav>
-        </div>
+        </menu>
     </header>
     <main>
         <section class="topo-do-site">
