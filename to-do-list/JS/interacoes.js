@@ -1,33 +1,26 @@
 let contador = 0;
-let input = document.getElementById('inputTarefas');
-let add = document.getElementById('btn-add');
-let section = document.getElementById('lista');
+let input = document.getElementById("inputTarefas");
+let add = document.getElementById("btn-add");
+let section = document.getElementById("lista");
 
 function addTarefa() {
     //PEGAR VALOR DIGITADO NO INPUT
     let valorInput = input.value;
 
     //SE NÃO FOR VAZIO, NULO NEM INDEFINIDO...
-    if ((valorInput !== "") && (valorInput !== null) && (valorInput !== undefined)) {
+    if (valorInput !== "" && valorInput !== null && valorInput !== undefined) {
 
         ++contador;
 
         let novoItem = `<div id="${contador}" class="item">
-            <div onclick="marcarTarefa(${contador})"            class="item-icone">
-                <span id="circle" class="material-symbols-outlined">
-                    circle
-                </span>
-                <span id="check" class="material-symbols-outlined">
-                    check_circle
-                </span>
+            <div onclick="marcarTarefa(${contador})"         class="item-icone">
+                <i id="icone_${contador}" class="bi bi-circle" style="font-size: 1.5em"></i>
             </div>
             <div onclick="marcarTarefa(${contador})"  class="item-nome">
                 ${valorInput}
             </div>
             <div class="item-botao">
-                <button onclick = "deletar(${contador})" class="delete"><span class="material-symbols-outlined">
-                        delete
-                    </span>Deletar</button>
+                <button onclick = "deletar(${contador})" class="delete"><i class="bi bi-trash"></i>Deletar</button>
             </div>
         </div>`;
 
@@ -47,23 +40,32 @@ function deletar(id) {
 
 function marcarTarefa(id) {
     var item = document.getElementById(id);
-    var classe = item.getAttribute('class');
+    var classe = item.getAttribute("class");
     console.log(classe);
 
     if (classe == "item") {
-        item.classList.add('clicado');
+        item.classList.add("clicado");
 
-        document.getElementById('circle').style.display = 'none';
-        document.getElementById('check').style.display = 'block';
+        var icone = document.getElementById("icone_" + id);
+        // Remove as partes antigas da classe
+        icone.classList.remove("bi");
+        icone.classList.remove("bi-circle");
+        // Adiciona as partes novas da classe
+        icone.classList.add("bi");
+        icone.classList.add("bi-check-circle-fill");
 
- 
+        item.parentNode.appendChild(item)
 
     } else {
-        item.classList.remove('clicado');
+        item.classList.remove("clicado");
 
-        document.getElementById('circle').style.display = 'block';
-        document.getElementById('check').style.display = 'none';
-
+        var icone = document.getElementById("icone_" + id);
+        // Adiciona as partes antigas da classe
+        icone.classList.add("bi");
+        icone.classList.add("bi-circle");
+        // Remove as partes novas da classe
+        icone.classList.remove("bi");
+        icone.classList.remove("bi-check-circle-fill");
     }
 }
 

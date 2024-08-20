@@ -8,12 +8,17 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #eeee;
+    background: rgba(0, 0, 0, 0.695) url('/to-do-list/img/360_F_513597277_YYqrogAmgRR9ohwTUnOM784zS9eYUcSk.jpg') center no-repeat fixed;
+    background-size: cover;
+    background-blend-mode: darken;
 }
 
 h1 {
     text-align: center;
     font-size: 3em;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.321);
+    font-variant: small-caps;
 }
 
 section {
@@ -63,9 +68,9 @@ section#lista {
     background-color: white;
     height: 80px;
     width: 100%;
-    box-shadow: 0 0 20px #ccc;
     margin-bottom: 2%;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .item.clicado {
@@ -99,19 +104,37 @@ section#lista {
     background-color: rgb(233, 0, 0);
     color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.606);
+    font-size: 0.9em;
     font-weight: bold;
     border: none;
+    border-radius: 0 10px 10px 0;
     padding: 10px;
     height: 80px;
     width: 100%;
 }
 
-.material-symbols-outlined#check {
-    display: none;
-    font-variation-settings:
-        'FILL' 1,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24;
+.delete:hover{
+    background-color: rgb(131, 0, 0);
+}
+
+.bi.bi-check-circle-fill {
     color: green;
+}
+
+.bi.bi-trash {
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 500px) {
+
+    input {
+        height: 100px;
+        font-size: 1.5em;
+        width: 69%;
+    }
+
+    button.add {
+        width: 30%;
+        font-size: 1em;
+    }
 }
