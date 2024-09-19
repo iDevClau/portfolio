@@ -1,0 +1,404 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cp--color: #1795ba;
+    --cp2--color: #B28756;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+/* TOPO DO SITE */
+
+header {
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+
+.header {
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logoimg {
+    margin: auto;
+}
+
+.logoimg span {
+    color: var(--cp--color);
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu ul,
+.menu li {
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    padding: 0px 15px;
+    height: 100px;
+    align-items: center;
+    border-bottom: 5px solid black;
+}
+
+.menu li a:hover,
+.menu .ativo a {
+    border-bottom: 5px solid var(--cp--color);
+    ;
+    color: rgb(160, 160, 160);
+}
+
+.btn-abrir-menu i {
+    display: none;
+}
+
+
+/* BANNER */
+
+.banner {
+    height: calc(100vh - 100px);
+    background: rgba(0, 0, 0, 0.917) url(../images/deve.jpg) right no-repeat fixed;
+    background-size: cover;
+    background-blend-mode: darken;
+    overflow: hidden;
+}
+
+.banner .sliders {
+    width: 1000vw;
+    height: 100%;
+    display: inline-block;
+
+}
+
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+}
+
+.banner .slidearea {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3.5em;
+}
+
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 1.3em;
+}
+
+.banner span {
+    display: block;
+    color: var(--cp--color);
+    text-align: center;
+}
+
+.banner .sliders-pointers {
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .pointer {
+    width: 15px;
+    height: 15px;
+    border: 2px solid var(--cp--color);
+    border-radius: 8px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.banner .pointer.ativo {
+    background-color: var(--cp--color);
+}
+
+/* BOTÕES */
+
+.banner button,
+.sobre-esquerda button,
+footer button {
+    margin-top: 30px;
+    padding: 15px 35px;
+    border-radius: 25px;
+    background-color: var(--cp--color);
+    border: none;
+}
+
+.banner button:hover,
+.sobre-esquerda button:hover,
+footer button:hover {
+    transform: scale(1.2);
+    background-color: #116883;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.banner button a,
+.sobre-esquerda button a,
+footer button a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+
+/* SECTIONS */
+
+.padrao {
+    width: 100vw;
+    padding: 50px;
+}
+
+.corpo {
+    max-width: 1140px;
+}
+
+.padrao .titulo,
+.padrao .descricao {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.padrao .titulo {
+    font-size: 1.7em;
+}
+
+.padrao .descricao {
+    font-size: 1em;
+    color: rgb(173, 173, 173);
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.padrao .corpo {
+    margin: auto;
+}
+
+.padrao.claro {
+    background-color: #F7F7F7;
+}
+
+.padrao.claro .titulo,
+.padrao.claro .corpo {
+    color: black;
+}
+
+.padrao.escuro {
+    background-color: black;
+}
+
+.padrao.escuro .titulo,
+.padrao.escuro .corpo {
+    color: white;
+}
+
+/* SOBRE */
+
+.sobre {
+    display: flex;
+}
+
+.sobre-esquerda {
+    flex: 1;
+}
+
+.sobre-esquerda p {
+    font-size: 1.1em;
+    word-spacing: 2px;
+    line-height: 25px;
+}
+
+.sobre-direita {
+    width: 500px;
+    text-align: center;
+}
+
+.sobre-direita img {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.662);
+}
+
+/* TECNOLOGIAS */
+
+.tecnologias {
+    display: flex;
+    margin-top: 70px;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecnologia {
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin-right: 50px;
+}
+
+.imagem-logo{
+    display: flex;
+}
+
+.titulo-logo{
+    display: flex;
+}
+
+.tecnologia h3 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    font-size: 1.1em;
+}
+
+/* PORTFOLIO */
+
+.portfolio {
+    display: flex;
+    align-items: center;
+}
+
+.portfolio .conteudo {
+    display: flex;
+    width: 100vw;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.portfolio video {
+    width: 400px;
+    height: 600px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.213);
+}
+
+.portfolio img {
+    width: 400px;
+    height: 600px;
+    margin-right: 10px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .corpo-footer {
+    display: flex;
+    max-width: 1140px;
+    justify-content: center;
+    align-items: center;
+}
+
+.esquerda,
+.meio,
+.direita {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    color: white;
+    margin-left: 70px;
+    height: 123px;
+}
+
+.esquerda {
+    flex-direction: column;
+}
+
+.meio .texto {
+    display: flex;
+}
+
+.meio .texto p {
+    display: flex;
+}
+
+.esquerda .redes {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.818);
+    width: 100px;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.logo-redes {
+    display: flex;
+}
+
+.logo-redes img {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.logo-redes img:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+    background-color: #1795ba;
+    border-radius: 40px;
+    transition: .5s;
+}
+
+.copy {
+    display: flex;
+}
+
+.copy p {
+    color: white;
+    margin-top: 60px;
+}

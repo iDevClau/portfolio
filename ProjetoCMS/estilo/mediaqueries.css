@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+/* TABLETS */
+
+@media (min-width: 450px) and (max-width:920px) {
+
+    /* TOPO DO SITE */
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: black;
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li a {
+        font-weight: bold;
+        height: 80px;
+        font-size: 22px;
+        margin-left: 70px;
+        border: 0;
+    }
+
+    .menu li.ativo a {
+        border: 0;
+        color: var(--cp--color);
+    }
+
+    .btn-abrir-menu i {
+        color: var(--cp--color);
+        font-size: 40px;
+        display: block;
+        margin-right: 30px;
+    }
+
+    /* SOBRE NÓS */
+
+    .sobre {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-esquerda button {
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+}
+
+@media (max-width:450px) {
+
+    /* CELULAR */
+
+    /* TOPO DO SITE */
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: black;
+        width: 80vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li a {
+        font-weight: bold;
+        height: 50px;
+        font-size: 18px;
+        margin-left: 30px;
+        border: 0;
+    }
+
+    .menu li a:hover{
+        border: 0;
+    }
+
+    .menu li.ativo a {
+        border: 0;
+        color: var(--cp--color);
+    }
+
+    .btn-abrir-menu i {
+        color: var(--cp--color);
+        font-size: 40px;
+        display: block;
+        margin-right: 30px;
+    }
+
+    /* BANNER */
+
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .banner h2 {
+        font-size: 1.1em;
+    }
+
+    /* SOBRE NÓS */
+
+    .sobre {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-esquerda button {
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .sobre-direita img {
+        width: 70%;
+    }
+
+    /* PORTFOLIO */
+
+    .portfolio video {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* TECNOLOGIAS */
+
+    .tecnologia {
+        margin-right: 5px;
+    }
+
+    /* FOOTER */
+
+    footer .corpo-footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .esquerda,
+    .meio,
+    .direita {
+        display: flex;
+        justify-content: center;
+        color: white;
+        margin-left: 0;
+        height: 0;
+    }
+
+    .copy p {
+        color: white;
+        margin-bottom: 60px;
+    }
+
+    .direita {
+        margin-top: 30px;
+    }
+
+    .direita button{
+        display: block;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    .logo-redes img:hover{
+        background-color: transparent;
+    }
+}
