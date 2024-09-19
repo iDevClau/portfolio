@@ -286,11 +286,11 @@ footer button a {
     margin-right: 50px;
 }
 
-.imagem-logo{
+.imagem-logo {
     display: flex;
 }
 
-.titulo-logo{
+.titulo-logo {
     display: flex;
 }
 
@@ -302,30 +302,24 @@ footer button a {
 
 /* PORTFOLIO */
 
-.portfolio {
-    display: flex;
-    align-items: center;
+div.iframes {
+    margin-top: 70px;
+    display: block;
 }
 
-.portfolio .conteudo {
-    display: flex;
-    width: 100vw;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.portfolio video {
+.port1 {
+    display: inline-block;
+    margin: 20px;
     width: 400px;
-    height: 600px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.213);
 }
 
-.portfolio img {
+.port1 iframe {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px #1794ba29;
+    height: 500px;
     width: 400px;
-    height: 600px;
-    margin-right: 10px;
+
 }
 
 /* FOOTER */

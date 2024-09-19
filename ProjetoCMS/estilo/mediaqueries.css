@@ -60,6 +60,19 @@
         margin-bottom: 50px;
     }
 
+    /* PORTFOLIO */
+
+    .port1 {
+        display: block;
+        margin: auto;
+        width: 400px;
+    }
+
+    .port1 iframe {
+        display: block;
+        margin-bottom: 50px;
+    }
+
 }
 
 @media (max-width:450px) {
@@ -95,7 +108,7 @@
         border: 0;
     }
 
-    .menu li a:hover{
+    .menu li a:hover {
         border: 0;
     }
 
@@ -142,9 +155,16 @@
 
     /* PORTFOLIO */
 
-    .portfolio video {
+    .port1 {
+        display: block;
+        margin: auto;
         width: 100%;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+    }
+
+    .port1 iframe {
+        width: 100%;
+        height: 500px;
     }
 
     /* TECNOLOGIAS */
@@ -180,13 +200,13 @@
         margin-top: 30px;
     }
 
-    .direita button{
+    .direita button {
         display: block;
         margin: auto;
         margin-top: 15px;
     }
 
-    .logo-redes img:hover{
+    .logo-redes img:hover {
         background-color: transparent;
     }
 }
